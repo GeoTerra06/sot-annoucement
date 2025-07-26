@@ -127,22 +127,20 @@
       display: block;
       font-weight: 500;
     }
-    .modal-textarea {
+    /* New box for more information */
+    .modal-more-box {
       width: 100%;
-      height: 80px;
+      min-height: 80px;
       border: 1px solid #d3d9e3;
       border-radius: 6px;
       padding: 8px;
       font-size: 1rem;
-      resize: none;
-      box-sizing: border-box;
-      margin-bottom: 8px;
       background: #f7f8fa;
       color: #333;
-    }
-    .modal-textarea:disabled {
-      background: #f0f0f0;
-      color: #888;
+      margin-bottom: 8px;
+      word-break: break-word;
+      box-sizing: border-box;
+      white-space: pre-wrap;
     }
     @media (max-width: 600px) {
       .modal {
@@ -168,8 +166,8 @@
       <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
       <div class="modal-title" id="modalTitle"></div>
       <div class="modal-desc" id="modalDesc"></div>
-      <label for="modalTextArea" class="modal-textarea-label">More Information:</label>
-      <textarea id="modalTextArea" class="modal-textarea" placeholder="No more details..." disabled></textarea>
+      <label for="modalMoreBox" class="modal-textarea-label">More Information:</label>
+      <div id="modalMoreBox" class="modal-more-box">No more details...</div>
     </div>
   </div>
   <script>
@@ -199,16 +197,15 @@
         const modalTitle = document.getElementById('modalTitle');
         const modalDesc = document.getElementById('modalDesc');
         const modalClose = document.getElementById('modalClose');
-        const modalTextArea = document.getElementById('modalTextArea');
+        const modalMoreBox = document.getElementById('modalMoreBox');
 
         titles.forEach(titleElem => {
           titleElem.addEventListener('click', function() {
             modalTitle.textContent = this.getAttribute('data-title');
             modalDesc.textContent = this.getAttribute('data-desc');
-            // Decode any HTML tags/entities so they show up correctly
-            modalTextArea.value = decodeURIComponent(this.getAttribute('data-more') || "");
+            const moreInfo = decodeURIComponent(this.getAttribute('data-more') || "");
+            modalMoreBox.textContent = moreInfo && moreInfo.trim() ? moreInfo : "No more details...";
             modalOverlay.style.display = 'flex';
-            modalTextArea.blur();
           });
         });
 
