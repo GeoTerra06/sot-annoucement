@@ -32,7 +32,10 @@
       padding: 32px 24px 24px 24px;
       border: 1px solid var(--border);
     }
-    h1 {
+    .main-title {
+      display: flex;
+      align-items: center;
+      gap: 18px;
       margin-top: 0;
       color: var(--primary);
       font-size: 2rem;
@@ -40,6 +43,15 @@
       border-bottom: 1px solid var(--border);
       padding-bottom: 12px;
       font-weight: 600;
+    }
+    .main-title img {
+      height: 44px;
+      width: 44px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
+      background: #fff;
     }
     ul.announcement-list {
       list-style: none;
@@ -194,12 +206,23 @@
       .container {
         padding: 8px 2px 2px 2px;
       }
+      .main-title {
+        font-size: 1.2rem;
+        gap: 10px;
+      }
+      .main-title img {
+        height: 32px;
+        width: 32px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Kingshot - SoT Alliance Announcement</h1>
+    <div class="main-title">
+      <img src="https://lens.usercontent.google.com/image?vsrid=CLqa1YmItf-E0QEQAhgBIiQ1MzM2NGEzZi00ZWY0LTQyZmUtODk1Ni03YjBmNTc1NGJjYTUyBiICc2woGji99t-I2dmOAw&gsessionid=SLjyd-SF70sXiYR4QypinzTAwib8zAKVfTMtEpeqLO-VCywe8U5Fyw" alt="Kingshot Alliance Icon" />
+      Kingshot - SoT Alliance Announcement
+    </div>
     <ul class="announcement-list" id="announcementList">
       <!-- Announcements will be loaded here -->
     </ul>
