@@ -140,7 +140,7 @@
       margin-bottom: 8px;
       word-break: break-word;
       box-sizing: border-box;
-      white-space: pre-wrap;
+      /* Remove white-space: pre-wrap; so HTML can render normally */
     }
     @media (max-width: 600px) {
       .modal {
@@ -181,6 +181,7 @@
           // Format: date|title|desc|more
           const [date, title, desc, more] = line.split('|');
           const li = document.createElement('li');
+          // encodeURIComponent not needed for data-more anymore, will use raw HTML
           li.innerHTML = `
             <span class="date">${date}</span>
             <div class="announcement-title" data-title="${title}" data-desc="${desc}" data-more="${encodeURIComponent(more)}">
@@ -203,8 +204,9 @@
           titleElem.addEventListener('click', function() {
             modalTitle.textContent = this.getAttribute('data-title');
             modalDesc.textContent = this.getAttribute('data-desc');
+            // Render HTML tags in more info
             const moreInfo = decodeURIComponent(this.getAttribute('data-more') || "");
-            modalMoreBox.textContent = moreInfo && moreInfo.trim() ? moreInfo : "No more details...";
+            modalMoreBox.innerHTML = moreInfo && moreInfo.trim() ? moreInfo : "No more details...";
             modalOverlay.style.display = 'flex';
           });
         });
