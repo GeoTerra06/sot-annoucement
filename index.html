@@ -185,7 +185,7 @@
           const li = document.createElement('li');
           li.innerHTML = `
             <span class="date">${date}</span>
-            <div class="announcement-title" data-title="${title}" data-desc="${desc}" data-more="${more}">
+            <div class="announcement-title" data-title="${title}" data-desc="${desc}" data-more="${encodeURIComponent(more)}">
               ${title}
             </div>
             <div class="announcement-desc">${desc}</div>
@@ -205,7 +205,8 @@
           titleElem.addEventListener('click', function() {
             modalTitle.textContent = this.getAttribute('data-title');
             modalDesc.textContent = this.getAttribute('data-desc');
-            modalTextArea.value = this.getAttribute('data-more') || "";
+            // Decode any HTML tags/entities so they show up correctly
+            modalTextArea.value = decodeURIComponent(this.getAttribute('data-more') || "");
             modalOverlay.style.display = 'flex';
             modalTextArea.blur();
           });
