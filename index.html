@@ -224,28 +224,6 @@
     <div class="main-title">
       <!-- Alliance SVG icon for title -->
       <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- ... SVG paths ... -->
-      </svg>
-      Kingshot - SoT Alliance Announcement
-    </div>
-    <ul class="announcement-list" id="announcementList">
-      <!-- Announcements will be loaded here -->
-    </ul>
-  </div>
-  <!-- Modal Popup -->
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal" id="modalWindow">
-      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
-      <div class="modal-title" id="modalTitle"></div>
-      <div class="modal-desc" id="modalDesc"></div>
-      <label for="modalMoreBox" class="modal-textarea-label">More Information:</label>
-      <div id="modalMoreBox" class="modal-more-box">No more details...</div>
-    </div>
-  </div>
-  <script>
-    // SVG for Alliance icon in announcement list
-    const kingshotIconSVG = `
-      <svg class="announcement-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 0 C14.52 0 29.04 0 44 0 C44 14.52 44 29.04 44 44 C29.48 44 14.96 44 0 44 C0 29.48 0 14.96 0 0 Z " fill="#57332A" transform="translate(0,0)"/>
 <path d="M0 0 C5.94 0 11.88 0 18 0 C17.67 2.64 17.34 5.28 17 8 C18.98 8.99 20.96 9.98 23 11 C22.67 11.66 22.34 12.32 22 13 C22.24621907 14.88484944 22.56888087 16.76022087 22.9375 18.625 C23.13214844 19.62789062 23.32679687 20.63078125 23.52734375 21.6640625 C23.68332031 22.43492188 23.83929687 23.20578125 24 24 C24.99 24.33 25.98 24.66 27 25 C20.375 27 20.375 27 17 27 C17 27.99 17 28.98 17 30 C17.66 29.67 18.32 29.34 19 29 C20.81123407 28.92913795 22.62500973 28.91583677 24.4375 28.9375 C25.40558594 28.94652344 26.37367187 28.95554687 27.37109375 28.96484375 C28.67240234 28.98224609 28.67240234 28.98224609 30 29 C30.99 29 31.98 29 33 29 C32.67 30.32 32.34 31.64 32 33 C29.92446352 33.5534764 28.15634036 34 26 34 C25.62875 34.825 25.2575 35.65 24.875 36.5 C23 39 23 39 21.1328125 39.4375 C17.94878741 39.53080476 15.73297238 39.45810774 13 37.75 C12 36 12 36 12 32 C7.66208962 33.34268655 4.13574643 34.93212679 0 37 C0 24.79 0 12.58 0 0 Z " fill="#F2EB7D" transform="translate(0,1)"/>
 <path d="M0 0 C0 5.94 0 11.88 0 18 C-14.52 18 -29.04 18 -44 18 C-44 12 -44 12 -42.64453125 10.3203125 C-36.50855903 6.316885 -36.50855903 6.316885 -32 7 C-30.92474806 9.65228812 -29.90543849 12.28368454 -29 15 C-19.0764522 15.46821568 -19.0764522 15.46821568 -10 12 C-7.66005515 9.10672687 -7.66005515 9.10672687 -8.0625 5.4375 C-8.041875 4.303125 -8.02125 3.16875 -8 2 C-5 0 -5 0 0 0 Z " fill="#0B0A15" transform="translate(44,26)"/>
@@ -289,6 +267,32 @@
 <path d="M0 0 C1.98 0 3.96 0 6 0 C6.33 0.66 6.66 1.32 7 2 C6.67 2.66 6.34 3.32 6 4 C4.68 4 3.36 4 2 4 C2 3.01 2 2.02 2 1 C1.34 0.67 0.68 0.34 0 0 Z " fill="#53B5D1" transform="translate(24,1)"/>
 <path d="M0 0 C0.99 0 1.98 0 3 0 C3.66 1.65 4.32 3.3 5 5 C2.03 4.505 2.03 4.505 -1 4 C-0.67 2.68 -0.34 1.36 0 0 Z " fill="#6A191D" transform="translate(26,26)"/>
 <path d="M0 0 C0.99 0 1.98 0 3 0 C2.625 1.9375 2.625 1.9375 2 4 C1.01 4.495 1.01 4.495 0 5 C-0.99 4.34 -1.98 3.68 -3 3 C-2.34 3 -1.68 3 -1 3 C-0.67 2.01 -0.34 1.02 0 0 Z " fill="#B57116" transform="translate(23,8)"/>
+      </svg>
+      Kingshot - SoT Alliance Announcement
+    </div>
+    <ul class="announcement-list" id="announcementList">
+      <!-- Announcements will be loaded here -->
+    </ul>
+  </div>
+  <!-- Modal Popup -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalWindow">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      <div class="modal-title" id="modalTitle"></div>
+      <div class="modal-desc" id="modalDesc"></div>
+      <label for="modalMoreBox" class="modal-textarea-label">More Information:</label>
+      <div id="modalMoreBox" class="modal-more-box">No more details...</div>
+    </div>
+  </div>
+  <script>
+    // SVG for Alliance icon in announcement list
+    const kingshotIconSVG = `
+      <svg class="announcement-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="14" fill="#326ba8" stroke="#1a355e" stroke-width="2"/>
+        <path d="M16 8 L20 14 L16 16 L12 14 Z" fill="#fff" stroke="#1a355e" stroke-width="1"/>
+        <path d="M16 16 L24 19 L22 21 L16 20 Z" fill="#fff" stroke="#1a355e" stroke-width="1"/>
+        <path d="M16 16 L8 19 L10 21 L16 20 Z" fill="#fff" stroke="#1a355e" stroke-width="1"/>
+        <circle cx="16" cy="16" r="3" fill="#ffd700" stroke="#1a355e" stroke-width="1"/>
       </svg>
     `;
 
