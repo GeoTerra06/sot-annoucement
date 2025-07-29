@@ -4,3 +4,4 @@
 2025-07-26|All Out Event|⚔️ All Out Kill Event Rules|AllOut.txt
 2025-07-26|Swordland Showdown Event|🏰 Swordland Showdown Event|Showdown.txt
 2025-07-29|Fishing Event|🐬 Fishing Event|Fishing.txt
+2025-07-29|Viking Vengeance Event|🔥 Viking Vengeance Event|Viking.txt
