@@ -1,1 +1,4 @@
-<h5>This is where the current and upcoming events will appear</h5>
+<ul>
+<li>🐻Bear Hunt on 2025/AUG/23 at 14:00 UTC. Check the Bear Trap guide to learn about the event.</li>
+<li>🏰Swordland Showdown on 2025/AUG/24 at 14:00 UTC. Check the Swordland Showdown guide to learn about the event.</li>
+</ul>
