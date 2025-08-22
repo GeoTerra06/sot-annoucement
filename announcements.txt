@@ -1,6 +1,6 @@
 2025-07-26|Welcome to our Alliance webpage!|This contains a list of announcements for our members and also for our new mates to learn the alliance policies. We have the following resources for all SoT mates. Make sure to join and read them daily.<br/><br/>Press CTRL+F5 to see the latest announcements|MainAnnouncement.txt
 2025-08-22|📢Current and Upcoming Events|Click here to see the events|currentevents.txt
-2025-07-26|‼ NAP - Non Aggression Pact|Important to read! This is to know who's alliances we should not be attacking|NAP.txt
+2025-07-26|‼ NAP - Non Aggression Pact|&#128204;Important to read! This is to know who's alliances we should not be attacking|NAP.txt
 2025-07-26|Bear Trap Event|🐻 Bear Trap Event Rules|BearTrap.txt
 2025-07-26|All Out Event|⚔️ All Out Kill Event Rules|AllOut.txt
 2025-07-26|Swordland Showdown Event|🏰 Swordland Showdown Event|Showdown.txt
